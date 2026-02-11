@@ -41,6 +41,7 @@
             <img src="logo.svg" alt="Abhijeet Panda Logo" class="site-logo">
             <h1>Abhijeet Panda</h1>
             <p class="tagline">Security Researcher — Automation, Attack Surface Intelligence, Offensive Security Engineering</p>
+            <div id="terminal-text" class="terminal-illusion"></div>
         </div>
     </header>
 
@@ -96,5 +97,28 @@
             <p>&copy; 2026 Abhijeet Panda. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const terminalTextElement = document.getElementById('terminal-text');
+            const phrases = [
+                "_ Initiating large-scale recon...",
+                "_ Analyzing attack surface intelligence...",
+                "_ Processing AI-driven security systems...",
+                "_ Correlating deep threat insights...",
+                "_ Discovering emergent vulnerabilities...",
+                "_ Optimizing security automation workflows..."
+            ];
+            let phraseIndex = 0;
+
+            function updateTerminalText() {
+                terminalTextElement.textContent = phrases[phraseIndex];
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+
+            // Update immediately and then every 3 seconds
+            updateTerminalText();
+            setInterval(updateTerminalText, 3000);
+        });
+    </script>
 </body>
 </html>

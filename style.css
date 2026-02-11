@@ -81,6 +81,15 @@ a:hover {
     margin: 15px auto 0 auto;
 }
 
+.terminal-illusion {
+    font-family: 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+    font-size: 1em;
+    color: #4CAF50; /* Subtle green for terminal output */
+    margin-top: 20px;
+    text-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Subtle green glow */
+    min-height: 1.5em; /* Ensure consistent height */
+}
+
 /* Section Styling */
 .section {
     padding: 40px 0;
